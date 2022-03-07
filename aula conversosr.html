@@ -1,0 +1,33 @@
+<h1>Conversor de Moeda</h1>
+            <p>Aula1</p>
+        </div>
+        <div>
+            <form onsubmit="getMoeda()" method="dialog">
+                <div id='selec'>Você precisa selecionar as moedas</div>
+                <div>
+                    <input for='de' required value="1" id='moedainput' type="number" name="" min="1" step="any" id="">
+                    <select name="moeda" id="de" onchange="changeMoeda()">
+                        <option value="select" selected>Selecione</option>
+                        <option value="USD">Dólar Americano</option>
+                        <option value="BRL">Real Brasileiro</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
+                <div>
+                    <span id='spanpara'>para</span>
+                    <select name="moeda" id="para" onchange="changeMoeda()">
+                        <option value="select" selected>Selecione</option>
+                        <option value="USD">Dólar Americano</option>
+                        <option value="BRL">Real Brasileiro</option>
+                        <option value="EUR">Euro</option>
+                    </select>
+                </div>
+                <input type="submit" value="Calcular" id='calcular'>
+            </form>
+        </div>
+        <div id='res'>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
